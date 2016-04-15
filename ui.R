@@ -1,28 +1,26 @@
-
-# This is the user-interface definition of a Shiny web application.
-# You can find out more about building applications with Shiny here:
-# 
-# http://www.rstudio.com/shiny/
-#
-
 library(shiny)
 
-shinyUI(pageWithSidebar(
+# Define UI for application that draws a histogram
+shinyUI(fluidPage(
   
   # Application title
-  headerPanel("Old Faithful Geyser Data"),
+  titlePanel("Triathlon Time Estimator"),
+
+  # Sidebar with a slider input for the number of bins
+
+    fluidRow(
+      h3("Swim Pace"),
+      column(8,
+             column(2, 
+                    numericInput("num",
+                          "Minutes:",
+                          min = 0,
+                          max = 60,
+                          value = 1)),
+             column(2, numericInput("num",
+                                    "Seconds:",
+                                    min = 0,
+                                    max = 60,
+                                    value = 30))))))
   
-  # Sidebar with a slider input for number of bins
-  sidebarPanel(
-    sliderInput("bins",
-                "Number of bins:",
-                min = 1,
-                max = 50,
-                value = 30)
-  ),
   
-  # Show a plot of the generated distribution
-  mainPanel(
-    plotOutput("distPlot")
-  )
-))
