@@ -2,6 +2,8 @@ in_sec <- function(period_time) {
   period_to_seconds(period_time)
 }
 
+library(lubridate)
+
 # Swim time
 #swim_pace = seconds_to_period(117) # sec /100m     1.57 min/100m
 swim_pace <- period(minute=1,second=57) # sec /100m     1.57 min/100m
@@ -33,4 +35,7 @@ total_time <- in_sec(swim_time)+in_sec(T1)+
   in_sec(run_time)
   
 # Transoform into readable format
-seconds_to_period(total_time)
+total_time <- seconds_to_period(total_time)
+total_time$hour
+total_time$minute
+total_time$.Data
