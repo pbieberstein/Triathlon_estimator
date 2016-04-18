@@ -1,4 +1,8 @@
 # Triathlon_estimator
+
+## LAUNCH
+https://biebs.shinyapps.io/Olympic_estimator/
+
 ## ABOUT
 This contains the R & Shiny code to create a simple Web App for:
 - Predicting triathlon race time
