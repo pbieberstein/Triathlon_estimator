@@ -1,0 +1,6 @@
+{
+  "name": "Triathlon estimator",
+  "tagline": "A minimal web application for Triathletes",
+  "body": "# Triathlon_estimator\r\n## LAUNCH\r\n[https://biebs.shinyapps.io/Olympic_estimator/](https://biebs.shinyapps.io/Olympic_estimator/)\r\n## ABOUT\r\nThis contains the R & Shiny code to create a simple Web App for:\r\n- Predicting triathlon race time\r\n- Exploring how different paces affect race time\r\n- Finding optimum paces for desired race time\r\n\r\n## 1.0v FEATURES:\r\n- Adjustable distances to reflect real courses\r\n- Inclusion of transition times\r\n- Display times for each individual discipline\r\n\r\n\r\n## Author\r\nPhilipp von Bieberstein\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
